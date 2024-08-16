@@ -1,0 +1,74 @@
+{
+  "version": 2,
+  "dgSpecHash": "upNFc7p3pY3Wx9p6GeszKXW7cCx7Kq7KrOSJhMprX5XlfmjChhTh866HCb0Z3cpbvdsr+nv9BTJwc2nZHUd5qQ==",
+  "success": true,
+  "projectFilePath": "/Users/marcush/sandbox/forrester/blazor/blazor.csproj",
+  "expectedPackageFiles": [
+    "/Users/marcush/.nuget/packages/microsoft.netcore.platforms/1.0.1/microsoft.netcore.platforms.1.0.1.nupkg.sha512",
+    "/Users/marcush/.nuget/packages/microsoft.netcore.targets/1.0.1/microsoft.netcore.targets.1.0.1.nupkg.sha512",
+    "/Users/marcush/.nuget/packages/system.diagnostics.debug/4.0.11/system.diagnostics.debug.4.0.11.nupkg.sha512",
+    "/Users/marcush/.nuget/packages/system.globalization/4.0.11/system.globalization.4.0.11.nupkg.sha512",
+    "/Users/marcush/.nuget/packages/system.io/4.1.0/system.io.4.1.0.nupkg.sha512",
+    "/Users/marcush/.nuget/packages/system.reflection/4.1.0/system.reflection.4.1.0.nupkg.sha512",
+    "/Users/marcush/.nuget/packages/system.reflection.primitives/4.0.1/system.reflection.primitives.4.0.1.nupkg.sha512",
+    "/Users/marcush/.nuget/packages/system.resources.resourcemanager/4.0.1/system.resources.resourcemanager.4.0.1.nupkg.sha512",
+    "/Users/marcush/.nuget/packages/system.runtime/4.1.0/system.runtime.4.1.0.nupkg.sha512",
+    "/Users/marcush/.nuget/packages/system.runtime.extensions/4.1.0/system.runtime.extensions.4.1.0.nupkg.sha512",
+    "/Users/marcush/.nuget/packages/system.text.encoding/4.0.11/system.text.encoding.4.0.11.nupkg.sha512",
+    "/Users/marcush/.nuget/packages/system.text.encodings.web/4.0.0/system.text.encodings.web.4.0.0.nupkg.sha512",
+    "/Users/marcush/.nuget/packages/system.threading/4.0.11/system.threading.4.0.11.nupkg.sha512",
+    "/Users/marcush/.nuget/packages/system.threading.tasks/4.0.11/system.threading.tasks.4.0.11.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Text.Encodings.Web' 4.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-6xh7-4v2w-36q6",
+      "libraryId": "System.Text.Encodings.Web",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Text.Encodings.Web' 4.0.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-ch6p-4jcm-h8vh",
+      "libraryId": "System.Text.Encodings.Web",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1904",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Text.Encodings.Web' 4.0.0 has a known critical severity vulnerability, https://github.com/advisories/GHSA-ghhp-997w-qr28",
+      "libraryId": "System.Text.Encodings.Web",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Text.Encodings.Web' 4.0.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-j8f4-2w4p-mhjc",
+      "libraryId": "System.Text.Encodings.Web",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Text.Encodings.Web' 4.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-qhqf-ghgh-x2m4",
+      "libraryId": "System.Text.Encodings.Web",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}
