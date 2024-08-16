@@ -1039,19 +1039,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/marcush/.nuget/packages/": {}
+    "/Users/nitink/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/marcush/sandbox/forrester/blazor/blazor.csproj",
+      "projectUniqueName": "/Users/nitink/Documents/GitHub/blazor/blazor.csproj",
       "projectName": "blazor",
-      "projectPath": "/Users/marcush/sandbox/forrester/blazor/blazor.csproj",
-      "packagesPath": "/Users/marcush/.nuget/packages/",
-      "outputPath": "/Users/marcush/sandbox/forrester/blazor/obj/",
+      "projectPath": "/Users/nitink/Documents/GitHub/blazor/blazor.csproj",
+      "packagesPath": "/Users/nitink/.nuget/packages/",
+      "outputPath": "/Users/nitink/Documents/GitHub/blazor/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/marcush/.nuget/NuGet/NuGet.Config"
+        "/Users/nitink/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
