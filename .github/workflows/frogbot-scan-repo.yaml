@@ -17,11 +17,6 @@ jobs:
         # The repository scanning will be triggered periodically on the following branches.
         branch: ["main"]
     steps:
-      # - uses: jfrog/setup-jfrog-cli@v4
-      #   env:
-      #     JF_URL: ${{ vars.JF_URL }}
-      #   with:
-      #     oidc-provider-name: nitin-jfrog-github-oidc 
       - uses: jfrog/frogbot@v2
         with:
           oidc-provider-name: nitin-jfrog-github-oidc
@@ -30,6 +25,18 @@ jobs:
           # [Mandatory]
           # JFrog platform URL
           JF_URL: ${{ vars.JF_URL }}
+
+          # [Mandatory]
+          # The GitHub token is automatically generated for the job
+          JF_GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+          # [Mandatory]
+          # The name of the branch on which Frogbot will perform the scan
+          JF_GIT_BASE_BRANCH: ${{ matrix.branch }}
+
+          # [Optional]
+          # JFrog project. Learn more about it here: https://www.jfrog.com/confluence/display/JFROG/Projects
+          # JF_PROJECT: ${{ secrets.JF_PROJECT }}
 
           # [Optional, default: "TRUE"]
           # Fails the Frogbot task if any security issue is found.
