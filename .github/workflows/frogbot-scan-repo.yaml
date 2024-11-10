@@ -18,23 +18,23 @@ jobs:
         branch: ["main"]
     steps:
       - uses: jfrog/frogbot@v2
-        # with:
-        #   oidc-provider-name: nitin-jfrog-github-oidc
+        with:
+          oidc-provider-name: nitin-jfrog-github-oidc
         env:
           ACTIONS_STEP_DEBUG: true
           # [Mandatory]
           # JFrog platform URL
           JF_URL: https://${{ secrets.JF_URL }}/
 
-          JF_ACCESS_TOKEN: ${{ secrets.JF_ACCESS_TOKEN }}
+          # JF_ACCESS_TOKEN: ${{ secrets.JF_ACCESS_TOKEN }}
 
           # [Mandatory]
           # The GitHub token is automatically generated for the job
-          JF_GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # JF_GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
           # [Mandatory]
           # The name of the branch on which Frogbot will perform the scan
-          JF_GIT_BASE_BRANCH: ${{ matrix.branch }}
+          # JF_GIT_BASE_BRANCH: ${{ matrix.branch }}
 
           # [Optional]
           # JFrog project. Learn more about it here: https://www.jfrog.com/confluence/display/JFROG/Projects
