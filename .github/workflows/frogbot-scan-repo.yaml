@@ -19,9 +19,9 @@ jobs:
     steps:
       - uses: jfrog/setup-jfrog-cli@v4
         env:
-            JF_URL:${{ vars.JF_URL }}
+          JF_URL: ${{ vars.JF_URL }}
         with:
-            oidc-provider-name: nitin-jfrog-github-oidc 
+          oidc-provider-name: nitin-jfrog-github-oidc 
       - uses: jfrog/frogbot@v2
         with:
           oidc-provider-name: nitin-jfrog-github-oidc
