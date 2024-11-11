@@ -1,0 +1,65 @@
+name: Build and Publish
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: jfrog/setup-jfrog-cli@v4
+          name: Setup JFrog CLI
+          id: setup-cli
+        with:
+          oidc-provider-name: nitin-jfrog-github-oidc
+        env:
+          ACTIONS_STEP_DEBUG: true
+          # [Mandatory]
+          # JFrog platform URL
+          JF_URL: ${{ vars.JF_URL }}
+
+          # [Mandatory]
+          # The GitHub token is automatically generated for the job
+          JF_GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+          # [Mandatory]
+          # The name of the branch on which Frogbot will perform the scan
+          JF_GIT_BASE_BRANCH: ${{ matrix.branch }}
+
+          # [Optional, default: "TRUE"]
+          # Fails the Frogbot task if any security issue is found.
+          JF_FAIL: "FALSE"
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      
+      - name: Jfrog cli version
+        run: |
+          jf rt ping
+          jfrog -v
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+
+      - name: Publish build info
+        run: |
+          jf rt bce 
+          jf rt bp
+          
+      - name: Build scan
+        run: |            
+          jf build-scan --fail=false
