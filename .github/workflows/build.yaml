@@ -14,8 +14,8 @@ jobs:
 
     steps:
       - uses: jfrog/setup-jfrog-cli@v4
-          name: Setup JFrog CLI
-          id: setup-cli
+        name: Setup JFrog CLI
+        id: setup-cli
         with:
           oidc-provider-name: nitin-jfrog-github-oidc
         env:
