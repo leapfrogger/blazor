@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <PackageReference Include="System.Text.Encodings.Web" Version="4.0.0" />
+    <PackageReference Include="nuget.packaging" Version="6.8.0" />
+    <PackageReference Include="angularjs" Version="1.8.2" />
   </ItemGroup>
 
 </Project>
