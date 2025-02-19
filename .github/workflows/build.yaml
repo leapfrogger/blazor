@@ -70,3 +70,7 @@ jobs:
       - name: Build scan
         run: |            
           jf build-scan --fail=false
+
+      - name: Push to local repo
+        run: |
+          nuget push blazor -Source https://soleng.jfrog.io/artifactory/api/nuget/nitin-dotnet-local/blazor
