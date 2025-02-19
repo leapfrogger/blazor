@@ -73,4 +73,4 @@ jobs:
 
       - name: Push to local repo
         run: |
-          nuget push blazor -Source https://soleng.jfrog.io/artifactory/api/nuget/nitin-dotnet-local/blazor
+          dotnet nuget push blazor -Source https://soleng.jfrog.io/artifactory/api/nuget/nitin-dotnet-local/blazor
